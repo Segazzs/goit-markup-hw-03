@@ -56,16 +56,17 @@ button {
 
 .header {
   border: 1px solid #e7e9fc;
+  padding: 24px 0;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
 }
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -207,7 +208,17 @@ button {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefits-list {
