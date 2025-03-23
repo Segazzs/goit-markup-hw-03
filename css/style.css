@@ -8,8 +8,30 @@ body {
   letter-spacing: 2%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -20,9 +42,30 @@ ul {
   text-transform: capitalize;
 }
 
+button {
+  border: none;
+}
+
 /* HEADER */
 
-.header-link {
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
+.header-links {
+  display: flex;
+  gap: 40px;
+}
+
+.header-nav .header-link {
   text-decoration: none;
   font-weight: 500;
   color: #2e2f42;
@@ -40,6 +83,11 @@ ul {
 
 .header-address {
   font-style: normal;
+}
+
+.header-address ul {
+  display: flex;
+  gap: 40px;
 }
 
 .address-item {
@@ -94,6 +142,14 @@ ul {
 
 .title {
   background-color: #2e2f42;
+  padding: 188px 0;
+}
+
+.title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 
 .title h1 {
@@ -103,6 +159,8 @@ ul {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .title-button {
@@ -115,6 +173,8 @@ ul {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 
 .title-button:hover,
@@ -128,9 +188,26 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.benefits-content {
+  padding: 120px 0;
+}
+.benefits-content .section-title {
+  margin-bottom: 20px;
+}
+
+.benefits-content ul {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits-content ul li {
+  max-width: calc((100% - 72px) / 4);
+}
+
 .benefits-title {
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -142,6 +219,16 @@ ul {
   background-color: #f4f4fd;
 }
 
+.team-content {
+  padding: 120px 0;
+}
+
+.team-content ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 .section-title {
   color: #2e2f42;
 }
@@ -150,9 +237,15 @@ ul {
   background-color: #fff;
 }
 
+.team-info {
+  text-align: center;
+  padding: 32px 0;
+}
+
 .item-name {
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .item-job {
@@ -163,9 +256,30 @@ ul {
 
 /* PORTFOLIO */
 
-.name-app {
+.portfolio-content {
+  padding: 120px 0;
+}
+
+.portfolio-content .section-title {
+  margin-bottom: 72px;
+}
+
+.portfolio-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+}
+
+.portfolio-info .name-app {
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .type {
@@ -174,6 +288,11 @@ ul {
 }
 
 /* FOOTER */
+
+.footer-content {
+  padding: 100px 0;
+  max-width: 264px;
+}
 
 footer {
   background-color: #2e2f42;
@@ -187,4 +306,5 @@ footer .logo-web-color {
 .footer-text {
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  margin-top: 16px;
 }
