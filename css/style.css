@@ -32,7 +32,7 @@ img {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
 }
 
 .section-title {
@@ -66,8 +66,10 @@ button {
 
 .header-nav {
   display: flex;
-  align-items: center;
-  gap: 76px;
+}
+
+.logo {
+  margin-right: 76px;
 }
 
 .header-links {
@@ -80,6 +82,7 @@ button {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .header-link:hover,
@@ -95,7 +98,7 @@ button {
   font-style: normal;
 }
 
-.header-address ul {
+.address-list {
   display: flex;
   gap: 40px;
 }
@@ -185,6 +188,7 @@ button {
   cursor: pointer;
   padding: 16px 32px;
   border-radius: 4px;
+  min-width: 169px;
 }
 
 .title-button:hover,
@@ -202,12 +206,16 @@ button {
   margin-bottom: 20px;
 }
 
-.benefits-content ul {
+.visually-hidden {
+  display: none;
+}
+
+.benefits-list {
   display: flex;
   gap: 24px;
 }
 
-.benefits-content ul li {
+.benefit-item {
   max-width: calc((100% - 72px) / 4);
 }
 
@@ -226,10 +234,14 @@ button {
   background-color: #f4f4fd;
 }
 
-.team-content ul {
+.team-list {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+}
+
+.team-item {
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-title {
@@ -259,7 +271,7 @@ button {
 
 /* PORTFOLIO */
 
-.portfolio-content ul {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
@@ -284,14 +296,17 @@ button {
 
 /* FOOTER */
 
-.footer-content {
-  padding: 100px 0;
-  max-width: 264px;
+.footer-content .logo {
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 footer {
   background-color: #2e2f42;
   color: white;
+  padding: 100px 0;
 }
 
 footer .logo-web-color {
@@ -301,5 +316,5 @@ footer .logo-web-color {
 .footer-text {
   color: #f4f4fd;
   letter-spacing: 0.02em;
-  margin-top: 16px;
+  max-width: 264px;
 }
